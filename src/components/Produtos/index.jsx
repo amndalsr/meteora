@@ -7,7 +7,7 @@ import { CarrinhoContext } from "@/context/CarrinhoContext";
 const Produtos = () => {
   const { carrinho, setCarrinho } = useContext(CarrinhoContext);
 
-  function adicionarProduto(novoParamento) {
+  function adicionarProduto(novoProduto) {
     const temOProduto = carrinho.some((itemDoCarrinho) => {
       itemDoCarrinho.id === novoProduto.id;
     });
